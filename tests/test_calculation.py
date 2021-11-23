@@ -316,3 +316,13 @@ def test_matrix():
         if (score["x"] == "Survived" and score["y"] == "Age_datetime")
     ][0]
     assert invalid_score["ppscore"] == 0
+
+print("Starting tests...")
+test__normalized_f1_score()
+test__normalized_mae_score()
+test__determine_case_and_prepare_df()
+test__maybe_sample()
+test_score()
+test_predictors()
+test_matrix()
+print("...Finished tests")
